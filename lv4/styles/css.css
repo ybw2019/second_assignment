@@ -1,0 +1,297 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+li,ul
+{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #eeeeee;
+}
+.top
+{
+    width: 100%;
+    height: 60px;
+    background-color: #584cc0;
+}
+.top .logo
+{
+    float: left;
+    width: 250px;
+    height: 60px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 210px 10px;
+}
+.nav li
+{
+    float: left;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+}
+.nav li:nth-child(1)
+{
+    margin-left: 120px;
+}
+.top .nav a
+{
+    display: inline-block;
+    color: #ffffff;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+}
+.nav a:hover
+{
+    background-color: orange;
+}
+
+
+.top .search
+{
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-left: 100px;
+    line-height: 60px;
+}
+.search .text
+{
+    outline: none;
+    border: none;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+}
+.search .text:hover
+{
+    width: 250px;
+    transition: width 0.5s;
+}
+.search>img
+{
+    display: inline-block;
+    margin: 0 0 -4px -24px;
+    width: 14px;
+}
+
+
+
+.h1,.h2,.h3
+{
+    font-size: 14px;
+    color: #2e24b2;
+    font-weight: bold;
+    margin: 150px 0 50px 230px;
+}
+.content1
+{
+    width: 1076px;
+    margin: 0 auto;
+    background-color: #ffffff
+}
+.guidance
+{
+    margin: 0 auto;
+    width: 360px;
+    height: 60px;
+    display: flex;
+}
+.guidance li
+{
+    justify-content: space-around;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+}
+.guidance a
+{
+    display: inline-block;
+    height: 58px;
+}
+.guidance a:hover
+{
+    border-bottom: 2px solid orange;
+}
+.li1,.li2,.li3
+{
+    flex: 1;
+}
+.content_main
+{
+    width: 100%;
+    display: flex;
+    padding-bottom: 40px;
+}
+.content_main .aside
+{
+    flex: 1;
+    height: 300px;
+}
+.aside li
+{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+.aside a
+{
+    display: block;
+    padding-left: 40px;
+    width: cal(100%-60px);
+    height: 60px;
+}
+.aside a:hover
+{
+    background-color: rgb(97, 105, 219,0.3);
+}
+.content_main .search1
+{
+    flex: 1.5;
+    padding: 30px 0 0 40px;
+    margin-right: 40px;
+}
+.content_main .search2
+{
+    flex: 1.5;
+    padding: 30px 0 0 40px;
+    margin-right: 40px;
+}
+.content_main .search3
+{
+    flex: 1.5;
+    padding: 30px 0 0 40px;
+}
+.search1>img,.search2>img,.search3>img
+{
+    width: 100%;
+}
+.search1 h4,.search2 h4,.search3 h4
+{
+    margin: 10px 0;
+}
+.search1 p,.search2 p,.search3 p
+{
+    font-size: 12px;
+    color: #000000;
+}
+.content_main .sliter
+{
+    flex: 1;
+    padding: 30px 0 0 40px;
+}
+
+.content2_guidance
+{
+    width: 1076px;
+    height: 60px;
+    margin: 0 auto;
+}
+.content2_guidance li
+{
+    float: left;
+    width: 120px;
+    height: 60px;
+}
+.content2_guidance a:hover
+{
+    border-bottom: 2px solid orange;
+}
+.content2
+{
+    width: 1076px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 150px;
+}
+.comment1
+{
+    height: 450px;
+    flex: 1;
+    margin-right: 40px;
+    box-shadow: 10px 10px 50px #000000;   /*发现布局没设计好，不想改成动态的了嘻嘻orz */
+}
+.comment1 .pic
+{
+    position: relative;
+}
+.comment1 .pic img
+{
+    width: 100%;
+}
+.pic .title
+{
+    width: 100%;
+    background-color: rgb(211, 101, 233, .3);
+    color: #ffffff;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
+.comment1 span
+{
+    font-size: 12px;
+    height: 20px;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    line-height: 20px;
+}
+.comment1 .discuss
+{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #ffffff;
+    margin-top: -5px;
+}
+.discuss h4
+{
+    padding-top: 10px;
+    margin: 0 0 10px 0;
+    text-indent: 2em;
+}
+.discuss p
+{
+    font-size: 12px;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 20px;
+    line-height: 1.5em;
+}
+.discuss .button
+{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background-color: rgb(75, 86, 240);
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.button:hover
+{
+    background-color: orange;
+}
+
+
+
+.content3
+{
+    width: 1076px;
+    margin: 0 auto;
+    background-color: #ffffff
+}
